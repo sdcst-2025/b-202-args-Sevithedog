@@ -9,9 +9,14 @@ assert myAverage(1,2,5,6,10) == (4.6,5)
 ```
 
 """
-
+def myAverage(*args):
+    a = sum(args)/len(args)
+    terms= len(args)
+    print(a)
+    print(terms)
+    return a, terms
 
 
 
 assert myAverage(3,4,5) == (4,3)
-assert myAverage(1,2,5,6,10) == (4.6,5)
+assert myAverage(1,2,5,6,10) == (4.8,5)
